@@ -7,5 +7,5 @@
 
 ### Previsão do tempo app , utilizando django consumindo API  + bootstrap
 ![ Image 1](princiapl.png)
-# br 
+# br
 ![ Image 2](previsaodotempo.png)
