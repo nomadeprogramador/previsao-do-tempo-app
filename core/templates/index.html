@@ -1,0 +1,29 @@
+{% extends 'base/model.html' %}
+
+{% block content%}
+<style>
+    body{
+        font-family: 'Lemonada', cursive;
+        background-image: url('https://cdn.pixabay.com/photo/2020/01/24/21/33/city-4791269_960_720.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-color: rgba(35, 248, 142, 0.925);
+
+
+        
+    }   
+</style>
+<div class="container  text-center mt-5" style="width: 400px;">
+    <div class="card ">
+<form action="submit" method="get">
+    {%csrf_token%}
+    <div class=" card-body">
+    <input type="text"  name="city" id="city" placeholder="Cidade">
+    <br>
+    <button class="btn btn-success mt-2" type="submit">  Checar Temperatura</button>
+</form>
+    </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,11 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'homepage' %}">Previsão do tempo MASTER </a>
+        <a id ='me'class='nav-item' href="#" style="color: black;"> Desenvolvido por João | Nomade Programdor </a>
+    </div>
+  </nav>
+  <script> 
+  $("#me").animate({opacity:0},200,"linear",function(){
+  $(this).animate({opacity:1},5000);
+});
+</script>

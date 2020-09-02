@@ -1,0 +1,33 @@
+{% extends 'base/model.html' %}
+{%  block content%}
+<style> 
+
+    body {
+        
+    font-family: 'Lemonada', cursive;
+    background-image: url("https://cdn.pixabay.com/photo/2017/04/29/15/09/landscape-2270913_960_720.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgba(35, 248, 142, 0.925);
+
+    }
+    </style>    
+<div class="container mt-2 " style="width: 400px;">
+                <div class="card text-center mt-4">
+                    <div class="card-header text-center">{{cidade}} - {{pais}}</div>
+                <div class="card-body">
+                    <p> Temperatura : <strong>{{temperatura}} &#8451; </strong></p> 
+                    <p><strong>{{descricao}}</strong></p>
+                    {% if temperatura >= 25 %}
+                        <strong> TA FAZENDO CALOR </strong>
+                    {% else%}
+                        <p> TA FRIO - PEGA CASACO </p>
+                    {% endif%}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock%}  
